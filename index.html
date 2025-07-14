@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="headerText">
+    <h1>Image Gallery</h1>
+    <div class="filters">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('city')">City</button>
+    </div>
+  </div>
+
+  <div class="fullImageClass" id="fullImageBox">
+    <span id="crossIcon" onclick="closeFullImage()">×</span>
+    <img src="" id="fullImage" />
+    <div class="nav-btns">
+      <button onclick="prevImage()">⟨</button>
+      <button onclick="nextImage()">⟩</button>
+    </div>
+  </div>
+
+  <div class="imageGallery" id="imageGallery">
+    <img src="images/img (1).jpg" alt="1" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (2).jpg" alt="2" class="city" onclick="openFullImage(this)">
+    <img src="images/img (3).jpg" alt="3" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (4).jpg" alt="4" class="city" onclick="openFullImage(this)">
+    <img src="images/img (5).jpg" alt="5" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (6).jpg" alt="6" class="city" onclick="openFullImage(this)">
+    <img src="images/img (7).jpg" alt="7" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (8).jpg" alt="8" class="city" onclick="openFullImage(this)">
+    <img src="images/img (9).jpg" alt="9" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (10).jpg" alt="9" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (11).jpg" alt="9" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (12).jpg" alt="9" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (13).jpg" alt="9" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (14).jpg" alt="9" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (15).jpg" alt="9" class="nature" onclick="openFullImage(this)">
+    <img src="images/img (16).jpg" alt="9" class="city" onclick="openFullImage(this)">
+    <img src="images/img (17).jpg" alt="9" class="city" onclick="openFullImage(this)">
+    <img src="images/img (18).jpg" alt="9" class="city" onclick="openFullImage(this)">
+    <img src="images/img (19).jpg" alt="9" class="city" onclick="openFullImage(this)">
+    <img src="images/img (20).jpg" alt="9" class="city" onclick="openFullImage(this)">
+    <img src="images/img (21).jpg" alt="9" class="city" onclick="openFullImage(this)">
+    <img src="images/img (22).jpg" alt="9" class="city" onclick="openFullImage(this)">
+    <img src="images/img (23).jpg" alt="9" class="city" onclick="openFullImage(this)">
+    <img src="images/img (24).jpg" alt="9" class="city" onclick="openFullImage(this)">
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
